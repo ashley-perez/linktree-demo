@@ -20,6 +20,7 @@ function App() {
           <LinkCards key={index} cardinfo={card} />
         ))}
       </div>
+      
     </main>
   );
 }

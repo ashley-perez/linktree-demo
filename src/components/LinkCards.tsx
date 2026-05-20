@@ -5,14 +5,18 @@ function LinkCards({ cardinfo }: { cardinfo: CardData }) {
   const Icon = cardinfo.icon;
 
   return (
-    <a href={cardinfo.link} className="flex flex-col w-sm font-akt bg-red-500 items-center border-2 shadow-retro rounded-sm hover:bg-red-600 cursor-pointer">
+    <a
+      href={cardinfo.link}
+      className="flex flex-col w-sm font-bc-prop bg-win95-gray items-center border-2 shadow-win95 hover:bg-hover-gray cursor-pointer"
+    >
       <div className="flex flex-row p-2 pb-0 gap-2">
-        <div className="justify-center"> 
-				 { Icon &&  <Icon /> }
-				</div>
+        <div className="justify-center">{Icon && <Icon />}</div>
         <p> {cardinfo.title} </p>
       </div>
-      <p className="text-center text-sm text-gray-600"> {cardinfo.description} </p>
+      <p className="text-center text-sm text-gray-600">
+        {" "}
+        {cardinfo.description}{" "}
+      </p>
     </a>
   );
 }
