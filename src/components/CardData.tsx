@@ -1,3 +1,5 @@
+import { IconType } from 'react-icons';
+
 export type CardData = {
   title: string;
   link: string;
