@@ -1,1 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Akt:wght@100..900&family=Jua&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
 @import "tailwindcss";
+
+@theme {
+  --font-akt: Akt, sans-serif; 
+
+  --shadow-retro: 4px 4px 0px 0px rgba(0,0,0,1);
+}
+
