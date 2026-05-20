@@ -7,25 +7,25 @@ export type CardData = {
 
 export const cards: CardData[] = [
   {
-    title: Portfolio,
-    link: "placeholder",
+    title: "Portfolio",
+    link: "https://ashley-perez.pages.dev/",
     description: "ashley-perez.pages.dev",
     // icon:
   },
   {
-    title: Linkedin,
-    link: "placeholder",
-    description: "type the link",
+    title: "Linkedin",
+    link: "https://www.linkedin.com/in/ashley-perezzz/",
+    description: "linked.com/in/ashley-perezzz",
     // icon:
   },
   {
-    title: Resume,
+    title: "Resume",
     link: "placeholder",
-    description: "type the link",
+    // description: "",
     // icon:
   },
   {
-    title: Github,
+    title: "Github",
     link: "https://github.com/ashley-perez",
     description: "github.com/ashley-perez",
     // icon:
