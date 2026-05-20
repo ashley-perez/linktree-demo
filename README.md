@@ -8,6 +8,6 @@ TBD
 
 ## Github Pages Link
 
-Link: [placeholder]
+Link: https://ashley-perez.github.io/linktree-demo/
 
 
