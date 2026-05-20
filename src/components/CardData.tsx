@@ -27,6 +27,7 @@ export const cards: CardData[] = [
   {
     title: "Resume",
     link: "https://docs.google.com/document/d/1iK4ZV_fwZgwS4v7jV6YLXGVcKkeNJxXC/preview",
+    description: "my work",
     icon: BsFileEarmark, // only pass in the name
   },
   {

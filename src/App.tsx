@@ -9,14 +9,14 @@ function App() {
   // stuff here
 
   return (
-    <main className="flex flex-col items-center">
-      <div className="p-3 justify-center">
+    <main className="flex flex-col items-center bg-win95-blue min-h-screen">
+      <div className="p-6 justify-center">
         <Profile />
       </div>
 
-      <div className="flex flex-col w-full gap-3 items-center">
+			<div className="flex flex-col w-full gap-3 items-center">
         {cards.map((card, index) => (
-          // rememeber that LinkCards {cardinfo}
+          // rememeber that LinkCards uses {cardinfo}
           <LinkCards key={index} cardinfo={card} />
         ))}
       </div>
