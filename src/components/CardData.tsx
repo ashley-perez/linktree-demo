@@ -1,4 +1,6 @@
-import type { IconType } from 'react-icons';
+import type { IconType } from "react-icons";
+
+import { BsLinkedin } from "react-icons/bs";
 
 export type CardData = {
   title: string;
@@ -12,7 +14,7 @@ export const cards: CardData[] = [
     title: "Portfolio",
     link: "https://ashley-perez.pages.dev/",
     description: "ashley-perez.pages.dev",
-    // icon:
+    icon: <BsLinkedin />,
   },
   {
     title: "Linkedin",
@@ -22,7 +24,7 @@ export const cards: CardData[] = [
   },
   {
     title: "Resume",
-    link: "placeholder",
+    link: "https://docs.google.com/document/d/1iK4ZV_fwZgwS4v7jV6YLXGVcKkeNJxXC/preview",
     // description: "",
     // icon:
   },

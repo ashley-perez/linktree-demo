@@ -1,9 +1,11 @@
+import edelgard from "/edelgard.png"; // have to import since base changed
+
 function Profile() {
   return (
     <header className="flex flex-col items-center font-akt">
       <img
         className="w-15 h-15 md:w-30 md:h-30 rounded-full object-contain"
-        src="edelgard.png"
+        src={edelgard}
         alt="AP"
       />
 
