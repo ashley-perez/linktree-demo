@@ -14,7 +14,7 @@ export const cards: CardData[] = [
     title: "Portfolio",
     link: "https://ashley-perez.pages.dev/",
     description: "ashley-perez.pages.dev",
-    icon: <BsLinkedin />,
+    icon: BsLinkedin, // only pass in the name
   },
   {
     title: "Linkedin",
