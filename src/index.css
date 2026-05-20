@@ -20,3 +20,13 @@
 	                inset -2px -2px 0 #797979,
                   inset  2px  2px 0 #fbfbfb;
 }
+
+body {
+  /* for dynamic island on some iphones (like mine) */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+
+  /* just have global color here to fix above issue */
+  background-color: #008282;
+
+}
