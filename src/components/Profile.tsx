@@ -4,7 +4,7 @@ function Profile() {
   return (
     <header className="flex flex-col items-center font-bc-prop">
       <img
-        className="w-22 h-22 md:w-30 md:h-30 rounded-full object-contain"
+        className="w-22 h-22 md:w-30 md:h-30 rounded-full object-contain border-2 bg-win95-gray border-win95-off-white"
         src={edelgard}
         alt="AP"
       />

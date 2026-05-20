@@ -9,7 +9,7 @@ function App() {
   // stuff here
 
   return (
-    <main className="flex flex-col items-center bg-win95-blue min-h-screen">
+    <main className="flex flex-col items-center">
       <div className="p-6 justify-center">
         <Profile />
       </div>
