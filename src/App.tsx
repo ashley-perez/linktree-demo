@@ -14,13 +14,12 @@ function App() {
         <Profile />
       </div>
 
-			<div className="flex flex-col w-full gap-3 items-center">
+      <div className="flex flex-col w-full gap-3 items-center pb-6">
         {cards.map((card, index) => (
           // rememeber that LinkCards uses {cardinfo}
           <LinkCards key={index} cardinfo={card} />
         ))}
       </div>
-      
     </main>
   );
 }

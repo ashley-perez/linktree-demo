@@ -1,7 +1,7 @@
 import type { IconType } from "react-icons";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
-import { BsFileEarmark } from "react-icons/bs";
+import { BsFileEarmarkTextFill } from "react-icons/bs";
 import { BsFillSuitcaseLgFill } from "react-icons/bs";
 
 export type CardData = {
@@ -27,8 +27,8 @@ export const cards: CardData[] = [
   {
     title: "Resume",
     link: "https://docs.google.com/document/d/1iK4ZV_fwZgwS4v7jV6YLXGVcKkeNJxXC/preview",
-    description: "my work",
-    icon: BsFileEarmark, // only pass in the name
+    description: "my_experience.txt",
+    icon: BsFileEarmarkTextFill,
   },
   {
     title: "Github",

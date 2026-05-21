@@ -2,18 +2,18 @@ import edelgard from "/edelgard.png"; // have to import since base changed
 
 function Profile() {
   return (
-    <header className="flex flex-col items-center font-bc-prop">
+    <header className="flex flex-col items-center font-bc-prop text-win95-off-white">
       <img
-        className="w-22 h-22 md:w-30 md:h-30 rounded-full object-contain border-2 bg-win95-gray border-win95-off-white"
+        className="w-25 h-25 md:w-30 md:h-30 rounded-full object-contain border-2 bg-win95-gray border-win95-off-white"
         src={edelgard}
         alt="AP"
       />
 
-      <div className="text-win95-off-white pt-2 font-bold text-md md:text-2xl ">
+      <div className="pt-2 md:font-bold text-lg md:text-2xl ">
         <h2> Ashley Perez </h2>
       </div>
 
-      <p className="text-center w-40 md:w-full text-xs md:text-lg ">
+      <p className="text-center  w-40 md:w-full text-sm md:text-lg">
         SWE, Gamer, Educator
       </p>
       <p className="text-center text-[8px] md:text-xs ">
