@@ -18,7 +18,7 @@ function LinkCards({ cardinfo }: { cardinfo: CardData }) {
       {Icon && (
         // absolute -> doesn't mess with other elements positioning
         // only uses the parents as a reference to position itself
-        <div className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2">
+        <div className="absolute left-4 top-1/2 -translate-y-1/2">
           <Icon size={24} />
         </div>
       )}

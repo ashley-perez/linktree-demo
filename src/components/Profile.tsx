@@ -16,7 +16,7 @@ function Profile() {
       <p className="text-center  w-40 md:w-full text-sm md:text-lg">
         SWE, Gamer, Educator
       </p>
-      <p className="text-center text-[8px] md:text-xs ">
+      <p className="text-center text-[10px] md:text-xs ">
         I like to make things :)
       </p>
     </header>

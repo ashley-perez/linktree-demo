@@ -3,8 +3,6 @@
 @import "tailwindcss";
 
 @theme {
-  --font-akt: Akt, sans-serif;
-
   --font-bc-prop: Bitcount Prop Single, system-ui;
 
   --color-win95-blue: #008282;
@@ -15,7 +13,7 @@
   --color-hover-gray: #9b9b9b;
 
   --shadow-win95:
-    1px 1px 0px 0px rgba(0, 0, 0, 1), inset -2px -2px 0 #797979,
+    2px 2px 0px 0px rgba(0, 0, 0, 1), inset -2px -2px 0 #797979,
     inset 2px 2px 0 #fbfbfb;
 }
 
