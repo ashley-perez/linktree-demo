@@ -4,12 +4,13 @@
 import Profile from "./components/Profile";
 import LinkCards from "./components/LinkCards";
 import { businessCards } from "./components/CardData";
-import TimeCards from "./components/TimeCards";
-import { timecards } from "./components/TimeCards";
+// import TimeCards from "./components/TimeCards";
+// import { timecards } from "./components/TimeCards";
 
 import { useState } from "react";
 
-import type Mode from "./components/CardData";
+import type { Mode } from "./components/CardData";
+import DropDown from "./components/DropDown";
 
 function App() {
   // stuff here
@@ -19,6 +20,9 @@ function App() {
     <main className="flex flex-col items-center">
       <div className="p-6 justify-center">
         <Profile />
+				
+				<DropDown mode={mode} setMode={setMode} />
+
       </div>
 
       <div className="flex flex-col w-full gap-3 items-center pb-6">
@@ -28,11 +32,13 @@ function App() {
         ))}
       </div>
 
+			{ /*
       <div className="flex flex-col w-full gap-3 items-center pb-6">
         {timecards.map((card, index) => (
           <TimeCards key={index} timecardinfo={card} />
         ))}
       </div>
+			*/}
     </main>
   );
 }
