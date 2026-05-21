@@ -4,6 +4,8 @@
 import Profile from "./components/Profile";
 import LinkCards from "./components/LinkCards";
 import { cards } from "./components/CardData";
+import TimeCards from "./components/TimeCards";
+import { timecards } from "./components/TimeCards";
 
 function App() {
   // stuff here
@@ -20,6 +22,14 @@ function App() {
           <LinkCards key={index} cardinfo={card} />
         ))}
       </div>
+
+      <div className="flex flex-col w-full gap-3 items-center pb-6">
+        {timecards.map((card, index) => (
+          <TimeCards key={index} timecardinfo={card} />
+        ))}
+      </div>
+
+
     </main>
   );
 }
