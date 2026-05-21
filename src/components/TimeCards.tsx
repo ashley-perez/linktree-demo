@@ -48,14 +48,8 @@ export default function TimeCards({ timecardinfo }: { timecardinfo: TimeCardData
           only uses the parents as a reference to position itself */}
       <div className="absolute left-6 top-1/2 -translate-y-1/2 w-3 h-3 bg-red-500 rounded-full shadow-win95-circle"></div>
 
-      <div className="absolute right-10 top-1/2 -translate-y-1/2 w-10 h-5 bg-yellow-500 border-black">
-        COUNT
-      </div>
-
       <div className="pt-2">{timecardinfo.title}</div>
-      {timecardinfo.description && (
-        <div className="text-xs pb-2">{timecardinfo.description}</div>
-      )}
+      <div className="text-sm pb-2">COUNTDOWN</div>
     </a>
   );
 }
