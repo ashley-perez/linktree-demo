@@ -28,8 +28,6 @@ function App() {
           <TimeCards key={index} timecardinfo={card} />
         ))}
       </div>
-
-
     </main>
   );
 }
