@@ -1,10 +1,11 @@
-// import { useState, useEffect } from "react";
+// SCRAPPING????? REMEMBER TO DELETE
+import { useState } from "react";
 
 export type TimeCardData = {
   title: string;
   link: string;
-  endDate: string;
-  startDate?: string;
+  endDate?: Date;
+  startDate?: Date;
   description?: string;
 };
 
@@ -15,25 +16,32 @@ export type TimeCardData = {
 export const timecards: TimeCardData[] = [
   {
     title: "TIMESKIP - Public Beta",
-    endDate: "2026-05-28T21:00:00",
+    endDate: new Date(Date.now() + 30 * 60 * 60 * 1000),
     link: "placeholder",
   },
   {
     title: "TIMESKIP - Alpha Playtest",
-    endDate: "2026-03-07T21:00:00",
+    endDate: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000),
     description: "playtesters needed!",
     link: "placeholder",
   },
   {
     title: "TIMESKIP - ON STEAM NOW",
-    endDate: "2026-05-30T02:00:00",
+    startDate: new Date(Date.now() + 10 * 24 * 60 * 60 * 1000),
     description: "here we go again...",
     link: "placeholder",
   },
 ];
 
 export default function TimeCards({ timecardinfo }: { timecardinfo: TimeCardData }) {
+  
   // stuff here
+  const currDate = new Date(Date.now());
+
+	const [remainingTime, setTime] = useState<Date>();
+
+
+
   return (
     // whole card needs to be clickable so everything goes in the <a>
     <a

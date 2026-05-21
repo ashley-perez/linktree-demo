@@ -11,7 +11,11 @@ export type CardData = {
   icon?: IconType;
 };
 
-export const cards: CardData[] = [
+// can add more 'modes'
+export type Mode = "business" | "personal";
+
+// need to rename
+export const businessCards: CardData[] = [
   {
     title: "Portfolio",
     link: "https://ashley-perez.pages.dev/",
@@ -37,3 +41,43 @@ export const cards: CardData[] = [
     icon: BsGithub,
   },
 ];
+
+export const personalCards: CardData[] = [
+  {
+    title: "Server",
+    link: "discord.com",
+    description: "totally real server",
+    // icon: BsFillSuitcaseLgFill, // only pass in the name
+  },
+  {
+    title: "Steam",
+    link: "https://steamcommunity.com/id/sheybay101/",
+    description: "add me :)",
+    // icon: BsLinkedin,
+  },
+  {
+    title: "Spotify",
+    link: "https://open.spotify.com/user/ooooooof?si=6d373ecbbab14b5a",
+    description: "taylor swift enthusiast",
+    // icon: BsFileEarmarkTextFill,
+  },
+  {
+    title: "Instagram",
+    link: "instagram.com",
+    // description: "github.com/ashley-perez",
+    // icon: BsGithub,
+  },
+  {
+    title: "Letterboxd",
+    link: "https://boxd.it/NGmH",
+    // description: "",
+    // icon: BsGithub,
+  },
+];
+
+export const dynamicCards: Record<Mode, CardData[]> = {
+  "business": businessCards,
+  "personal": personalCards,
+}
+
+
