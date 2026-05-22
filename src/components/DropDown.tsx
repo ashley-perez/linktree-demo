@@ -18,7 +18,7 @@ export default function DropDown({ mode, setMode }: DropDownProps) {
           setOpen(!isOpen);
           console.log("isopen var: ", isOpen);
         }}
-        className={"py-2 px-4 border-2 bg-win95-gray shadow-win95"}
+        className={"cursor-pointer py-2 px-4 border-2 bg-win95-gray hover:bg-hover-gray shadow-win95"}
       >
         {mode}
       </button>
@@ -26,8 +26,12 @@ export default function DropDown({ mode, setMode }: DropDownProps) {
         Modes.map((selectedMode, index) => (
           <button
 					  key={index}
-            onClick={() => setMode(selectedMode)}
-            className="bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
+            onClick={() => {
+										setMode(selectedMode);
+										setOpen(!isOpen);
+						}}
+
+            className="cursor-pointer bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
           >
             {selectedMode}
           </button>

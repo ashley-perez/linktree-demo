@@ -56,7 +56,7 @@ export const professionalCards: CardData[] = [
 export const personalCards: CardData[] = [
   {
     title: "Server",
-    link: "discord.com",
+    link: "https://discord.com/",
     description: "totally real server",
     icon: BsDiscord,
   },
@@ -74,7 +74,7 @@ export const personalCards: CardData[] = [
   },
   {
     title: "Instagram",
-    link: "instagram.com",
+    link: "https://www.instagram.com/",
     description: ":D",
     icon: BsCameraFill,
   },
