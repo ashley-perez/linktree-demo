@@ -15,7 +15,7 @@ function App() {
     const searchParam = new URLSearchParams(currURL);
 
     // if searchParam exists and mode is in valid list of modes
-		const modeParam = searchParam.get("mode");
+    const modeParam = searchParam.get("mode");
     if (modeParam && Modes.includes(modeParam as Mode)) {
       setMode(modeParam as Mode); // typecast with as
     }

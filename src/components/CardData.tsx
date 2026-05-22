@@ -108,7 +108,7 @@ export const gdcCards: CardData[] = [
     icon: BsFillSuitcaseLgFill,
   },
   {
-    title: "linkedin",
+    title: "Linkedin",
     link: "https://www.linkedin.com/in/ashley-perezzz/",
     description: "linkedin.com/in/ashley-perezzz",
     icon: BsLinkedin,

@@ -15,15 +15,16 @@ export default function DropDown({ setMode }: DropDownProps) {
         // set the state when button is clicked
         onClick={() => {
           setOpen(!isOpen);
+          console.log("isopen var: ", isOpen);
         }}
         className={
-          " cursor-pointer p-2 bg-win95-gray hover:bg-win95-dark-gray shadow-win95"
+          "cursor-pointer md:text-sm p-2 bg-win95-gray  hover:bg-win95-dark-gray shadow-win95"
         }
       >
-        profile
+        Profile
       </button>
       {isOpen && (
-        <div className=" absolute right-0 mt-8">
+        <div className=" absolute right-0 mt-8 md:mt-9">
           {" "}
           {Modes.map((selectedMode, index) => (
             <button
