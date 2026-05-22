@@ -15,7 +15,6 @@ export default function DropDown({ setMode }: DropDownProps) {
         // set the state when button is clicked
         onClick={() => {
           setOpen(!isOpen);
-          console.log("isopen var: ", isOpen);
         }}
         className={
           " cursor-pointer p-2 bg-win95-gray hover:bg-win95-dark-gray shadow-win95"

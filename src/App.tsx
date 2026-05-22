@@ -4,7 +4,7 @@ import type { Mode } from "./components/CardData";
 import { Modes } from "./components/CardData";
 import { dynamicCards } from "./components/CardData";
 import DropDown from "./components/DropDown";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   const [mode, setMode] = useState<Mode>("professional");
@@ -15,10 +15,9 @@ function App() {
     const searchParam = new URLSearchParams(currURL);
 
     // if searchParam exists and mode is in valid list of modes
-    console.log("includes: ", Modes.includes(searchParam.get("mode")));
-    if (searchParam && Modes.includes(searchParam.get("mode"))) {
-      setMode(searchParam.get("mode") as Mode); // typecast with as
-      console.log(mode);
+		const modeParam = searchParam.get("mode");
+    if (searchParam && Modes.includes(modeParam)) {
+      setMode(modeParam as Mode); // typecast with as
     }
   }, []); // empty array - runs only once after initial mount (render)
 
