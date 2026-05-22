@@ -88,7 +88,6 @@ export const personalCards: CardData[] = [
   },
 ];
 
-
 export const gdcCards: CardData[] = [
   {
     title: "TIMESKIP - PITCH DECK",
@@ -100,7 +99,7 @@ export const gdcCards: CardData[] = [
     title: "TIMESKIP - DEMO",
     link: "https://itch.io/",
     icon: FaItchIo,
-		description: "leave a comment!"
+    description: "leave a comment!",
   },
   {
     title: "Portfolio",
@@ -120,8 +119,6 @@ export const gdcCards: CardData[] = [
     description: "@wingedgrenade",
     icon: BsTwitterX,
   },
- 
-  
 ];
 
 export const dynamicCards: Record<Mode, CardData[]> = {

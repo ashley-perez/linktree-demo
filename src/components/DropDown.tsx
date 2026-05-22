@@ -32,6 +32,12 @@ export default function DropDown({ setMode }: DropDownProps) {
               onClick={() => {
                 setMode(selectedMode);
                 setOpen(!isOpen);
+
+                // update URL HERE!!!
+                // only want to update URL when user changes the mode
+                const currURL = new URLSearchParams(window.location.search);
+                currURL.set("mode", selectedMode); // get mode= currMode ready to add to URL
+                window.history.pushState({}, "", `?${currURL.toString()}`); // write and update to URL
               }}
               className="cursor-pointer p-2 w-full text-[10px] md:text-xs bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
             >
