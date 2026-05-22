@@ -23,8 +23,9 @@ export default function DropDown({ mode, setMode }: DropDownProps) {
         {mode}
       </button>
       {isOpen &&
-        Modes.map((selectedMode) => (
+        Modes.map((selectedMode, index) => (
           <button
+					  key={index}
             onClick={() => setMode(selectedMode)}
             className="bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
           >

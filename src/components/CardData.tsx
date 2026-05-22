@@ -26,7 +26,6 @@ export type Mode = "professional" | "personal";
 // to have more dropdown cards
 export const Modes: Mode[] = ["professional", "personal"];
 
-// need to rename
 export const professionalCards: CardData[] = [
   {
     title: "Portfolio",
