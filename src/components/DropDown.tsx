@@ -3,11 +3,10 @@ import type { Mode } from "./CardData";
 import { Modes } from "./CardData";
 
 type DropDownProps = {
-  mode: Mode;
   setMode: (mode: Mode) => void;
 };
 
-export default function DropDown({ mode, setMode }: DropDownProps) {
+export default function DropDown({ setMode }: DropDownProps) {
   const [isOpen, setOpen] = useState(false);
 
   return (
