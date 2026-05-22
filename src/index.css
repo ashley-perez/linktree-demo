@@ -9,14 +9,13 @@
   --color-win95-gray: #c3c3c3;
   --color-win95-off-white: #fbfbfb;
   --color-win95-dark-gray: #797979;
-	--color-win95-dark-blue: #000080;
+  --color-win95-dark-blue: #000080;
 
   --color-hover-gray: #9b9b9b;
 
   --shadow-win95:
     2px 2px 0px 0px rgba(0, 0, 0, 1), inset -2px -2px 0 #797979,
     inset 2px 2px 0 #fbfbfb;
-  
 }
 
 body {
