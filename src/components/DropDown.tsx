@@ -11,31 +11,36 @@ export default function DropDown({ mode, setMode }: DropDownProps) {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <menu className="flex flex-col font-bc-prop">
+    <menu className="relative flex flex-col font-bc-prop text-xs">
       <button
         // set the state when button is clicked
         onClick={() => {
           setOpen(!isOpen);
           console.log("isopen var: ", isOpen);
         }}
-        className={"cursor-pointer py-2 px-4 border-2 bg-win95-gray hover:bg-hover-gray shadow-win95"}
+        className={
+          " cursor-pointer p-2 bg-win95-gray hover:bg-win95-dark-gray shadow-win95"
+        }
       >
-        {mode}
+        profile
       </button>
-      {isOpen &&
-        Modes.map((selectedMode, index) => (
-          <button
-					  key={index}
-            onClick={() => {
-										setMode(selectedMode);
-										setOpen(!isOpen);
-						}}
-
-            className="cursor-pointer bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
-          >
-            {selectedMode}
-          </button>
-        ))}
+      {isOpen && (
+        <div className=" absolute right-0 mt-8">
+          {" "}
+          {Modes.map((selectedMode, index) => (
+            <button
+              key={index}
+              onClick={() => {
+                setMode(selectedMode);
+                setOpen(!isOpen);
+              }}
+              className="cursor-pointer p-2 w-full text-[10px] md:text-xs bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
+            >
+              {selectedMode}
+            </button>
+          ))}
+        </div>
+      )}
     </menu>
   );
 }

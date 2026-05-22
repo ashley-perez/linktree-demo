@@ -10,12 +10,15 @@ function App() {
   const [mode, setMode] = useState<Mode>("professional");
 
   return (
-    <main className="flex flex-col items-center">
-      <div className="p-6 justify-center">
-        <Profile />
-
+    // relative parent for the dropdown
+    <main className="relative flex flex-col items-center pt-10">
+      <div className="absolute top-10 right-[10%] md:right-1/3">
         {/* need to move elsewhere i think */}
         <DropDown mode={mode} setMode={setMode} />
+      </div>
+
+      <div className="p-6 justify-center">
+        <Profile />
       </div>
 
       <div className="flex flex-col w-full gap-3 items-center pb-6">

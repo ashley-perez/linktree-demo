@@ -62,9 +62,9 @@ export const personalCards: CardData[] = [
   },
   {
     title: "Steam",
-    link: "https://steamcommunity.com/id/sheybay101/",
-    description: "add me :)",
-		icon: BsDpadFill, 
+    link: "https://store.steampowered.com/",
+    description: "game time",
+    icon: BsDpadFill,
   },
   {
     title: "Spotify",
