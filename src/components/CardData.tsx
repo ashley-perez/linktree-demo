@@ -4,6 +4,12 @@ import { BsGithub } from "react-icons/bs";
 import { BsFileEarmarkTextFill } from "react-icons/bs";
 import { BsFillSuitcaseLgFill } from "react-icons/bs";
 
+import { BsDiscord } from "react-icons/bs";
+import { BsDpadFill } from "react-icons/bs";
+import { BsSpotify } from "react-icons/bs";
+import { BsTicketDetailedFill } from "react-icons/bs";
+import { BsCameraFill } from "react-icons/bs";
+
 export type CardData = {
   title: string;
   link: string;
@@ -15,13 +21,13 @@ export type CardData = {
 // if adding a new "profile" type needs to be added to
 // both Mode and the array of Modes (Modes)
 // redundant but should work
-export type Mode = "business" | "personal";
+export type Mode = "professional" | "personal";
 
 // to have more dropdown cards
-export const Modes: Mode[] = ["business", "personal"];
+export const Modes: Mode[] = ["professional", "personal"];
 
 // need to rename
-export const businessCards: CardData[] = [
+export const professionalCards: CardData[] = [
   {
     title: "Portfolio",
     link: "https://ashley-perez.pages.dev/",
@@ -53,35 +59,35 @@ export const personalCards: CardData[] = [
     title: "Server",
     link: "discord.com",
     description: "totally real server",
-    // icon: BsFillSuitcaseLgFill, // only pass in the name
+    icon: BsDiscord,
   },
   {
     title: "Steam",
     link: "https://steamcommunity.com/id/sheybay101/",
     description: "add me :)",
-    // icon: BsLinkedin,
+		icon: BsDpadFill, 
   },
   {
     title: "Spotify",
     link: "https://open.spotify.com/user/ooooooof?si=6d373ecbbab14b5a",
     description: "taylor swift enthusiast",
-    // icon: BsFileEarmarkTextFill,
+    icon: BsSpotify,
   },
   {
     title: "Instagram",
     link: "instagram.com",
-    // description: "github.com/ashley-perez",
-    // icon: BsGithub,
+    description: ":D",
+    icon: BsCameraFill,
   },
   {
     title: "Letterboxd",
     link: "https://boxd.it/NGmH",
-    // description: "",
-    // icon: BsGithub,
+    description: "trying to watch every movie ever",
+    icon: BsTicketDetailedFill,
   },
 ];
 
 export const dynamicCards: Record<Mode, CardData[]> = {
-  business: businessCards,
+  professional: professionalCards,
   personal: personalCards,
 };

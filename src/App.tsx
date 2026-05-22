@@ -1,6 +1,3 @@
-// import reactLogo from './assets/react.svg'
-// import viteLogo from './assets/vite.svg'
-// import heroImg from './assets/hero.png'
 import Profile from "./components/Profile";
 import LinkCards from "./components/LinkCards";
 import type { Mode } from "./components/CardData";
@@ -10,8 +7,7 @@ import DropDown from "./components/DropDown";
 import { useState } from "react";
 
 function App() {
-  // default is business
-  const [mode, setMode] = useState<Mode>("business");
+  const [mode, setMode] = useState<Mode>("professional");
 
   return (
     <main className="flex flex-col items-center">
