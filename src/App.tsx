@@ -12,7 +12,7 @@ function App() {
   return (
     // relative parent for the dropdown
     <main className="relative flex flex-col items-center pt-10">
-      <div className="absolute top-10 right-[10%] md:right-[32%]">
+      <div className="absolute top-10 right-[10%] md:right-[31%]">
         <DropDown setMode={setMode} />
       </div>
 

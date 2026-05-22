@@ -3,12 +3,14 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { BsFileEarmarkTextFill } from "react-icons/bs";
 import { BsFillSuitcaseLgFill } from "react-icons/bs";
-
 import { BsDiscord } from "react-icons/bs";
 import { BsDpadFill } from "react-icons/bs";
 import { BsSpotify } from "react-icons/bs";
 import { BsTicketDetailedFill } from "react-icons/bs";
 import { BsCameraFill } from "react-icons/bs";
+import { FaItchIo } from "react-icons/fa";
+import { BsAsterisk } from "react-icons/bs";
+import { BsTwitterX } from "react-icons/bs";
 
 export type CardData = {
   title: string;
@@ -21,10 +23,10 @@ export type CardData = {
 // if adding a new "profile" type needs to be added to
 // both Mode and the array of Modes (Modes)
 // redundant but should work
-export type Mode = "professional" | "personal";
+export type Mode = "professional" | "personal" | "GDC";
 
 // to have more dropdown cards
-export const Modes: Mode[] = ["professional", "personal"];
+export const Modes: Mode[] = ["professional", "personal", "GDC"];
 
 export const professionalCards: CardData[] = [
   {
@@ -86,7 +88,44 @@ export const personalCards: CardData[] = [
   },
 ];
 
+
+export const gdcCards: CardData[] = [
+  {
+    title: "TIMESKIP - PITCH DECK",
+    link: "https://docs.google.com/presentation/d/1mDmLxQgHD23D9fwXWl5XGDO9MKHpttVJg48w3VG-zx0/edit?usp=sharing",
+    description: "more info on TIMESKIP",
+    icon: BsAsterisk,
+  },
+  {
+    title: "TIMESKIP - DEMO",
+    link: "https://itch.io/",
+    icon: FaItchIo,
+		description: "leave a comment!"
+  },
+  {
+    title: "Portfolio",
+    link: "https://ashley-perez.pages.dev/",
+    description: "ashley-perez.pages.dev",
+    icon: BsFillSuitcaseLgFill,
+  },
+  {
+    title: "linkedin",
+    link: "https://www.linkedin.com/in/ashley-perezzz/",
+    description: "linkedin.com/in/ashley-perezzz",
+    icon: BsLinkedin,
+  },
+  {
+    title: "X",
+    link: "https://x.com/wingedgrenade",
+    description: "@wingedgrenade",
+    icon: BsTwitterX,
+  },
+ 
+  
+];
+
 export const dynamicCards: Record<Mode, CardData[]> = {
   professional: professionalCards,
   personal: personalCards,
+  GDC: gdcCards,
 };
