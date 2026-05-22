@@ -16,10 +16,7 @@
   --shadow-win95:
     2px 2px 0px 0px rgba(0, 0, 0, 1), inset -2px -2px 0 #797979,
     inset 2px 2px 0 #fbfbfb;
-
-  --shadow-win95-circle:
-    1px 1px 0px 0px rgba(0, 0, 0, 1), inset 0px 0px 0 #797979,
-    inset 1px 1px 0 #fbfbfb;
+  
 }
 
 body {

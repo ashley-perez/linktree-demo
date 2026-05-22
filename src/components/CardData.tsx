@@ -12,7 +12,17 @@ export type CardData = {
 };
 
 // can add more 'modes'
+// if adding a new "profile" type needs to be added to 
+// both Mode and the array of Modes (Modes)
+// redundant but should work
 export type Mode = "business" | "personal";
+
+// to have more dropdown cards 
+export const Modes:Mode[] = [
+ "business",
+ "personal",
+];
+
 
 // need to rename
 export const businessCards: CardData[] = [

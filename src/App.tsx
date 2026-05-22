@@ -10,6 +10,7 @@ import { businessCards } from "./components/CardData";
 import { useState } from "react";
 
 import type { Mode } from "./components/CardData";
+import { dynamicCards } from "./components/CardData";
 import DropDown from "./components/DropDown";
 
 function App() {
@@ -26,19 +27,14 @@ function App() {
       </div>
 
       <div className="flex flex-col w-full gap-3 items-center pb-6">
-        {businessCards.map((card, index) => (
-          // rememeber that LinkCards uses {cardinfo}
-          <LinkCards key={index} cardinfo={card} />
-        ))}
+
+			{dynamicCards[mode].map((card, index) => (
+				  <LinkCards key={index} cardinfo={card} />
+				))}
+
+
       </div>
 
-			{ /*
-      <div className="flex flex-col w-full gap-3 items-center pb-6">
-        {timecards.map((card, index) => (
-          <TimeCards key={index} timecardinfo={card} />
-        ))}
-      </div>
-			*/}
     </main>
   );
 }

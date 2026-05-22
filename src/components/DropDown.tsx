@@ -1,5 +1,6 @@
 import { useState } from "react";
-import type { Mode } from "./CardData"
+import type { Mode } from "./CardData";
+import { Modes } from "./CardData";
 
 type DropDownProps = {
   mode: Mode;
@@ -23,8 +24,16 @@ export default function DropDown( { mode, setMode } : DropDownProps) {
       >
 			{mode}
       </button>
-			{isOpen && <button className="flex h-full bg-red-500">hello</button>}
+			{isOpen && Modes.map(selectedMode => (
+					<button 
+					onClick={() => setMode(selectedMode)}
+					className="bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
+					>
+						{selectedMode}
+					</button>
+		   		))
       
+			}
     </menu>
 
 
