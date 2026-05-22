@@ -16,7 +16,7 @@ function App() {
 
     // if searchParam exists and mode is in valid list of modes
 		const modeParam = searchParam.get("mode");
-    if (searchParam && Modes.includes(modeParam)) {
+    if (modeParam && Modes.includes(modeParam)) {
       setMode(modeParam as Mode); // typecast with as
     }
   }, []); // empty array - runs only once after initial mount (render)
