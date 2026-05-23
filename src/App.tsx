@@ -1,5 +1,5 @@
 import Profile from "./components/Profile";
-import { allProfiles, type ProfileData } from "./components/ProfileData";
+import { allProfiles } from "./components/ProfileData";
 import LinkCards from "./components/LinkCards";
 import type { Mode } from "./components/CardData";
 import { Modes } from "./components/CardData";
