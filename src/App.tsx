@@ -1,4 +1,5 @@
 import Profile from "./components/Profile";
+import { allProfiles, type ProfileData } from "./components/ProfileData";
 import LinkCards from "./components/LinkCards";
 import type { Mode } from "./components/CardData";
 import { Modes } from "./components/CardData";
@@ -29,7 +30,7 @@ function App() {
       </div>
 
       <div className="p-6 justify-center">
-        <Profile />
+        <Profile profileinfo={allProfiles[mode]} />
       </div>
 
       <div className="flex flex-col w-full gap-3 items-center pb-6">
