@@ -1,11 +1,9 @@
-import Profile from "./components/Profile";
-import { allProfiles } from "./components/ProfileData";
-import LinkCards from "./components/LinkCards";
-import type { Mode } from "./components/CardData";
-import { Modes } from "./components/CardData";
-import { dynamicCards } from "./components/CardData";
-import DropDown from "./components/DropDown";
 import { useState, useEffect } from "react";
+import { allProfiles } from "./components/ProfileData";
+import { Modes, dynamicCards, type Mode } from "./components/CardData";
+import LinkCards from "./components/LinkCards";
+import DropDown from "./components/DropDown";
+import Profile from "./components/Profile";
 
 function App() {
   const [mode, setMode] = useState<Mode>("professional");

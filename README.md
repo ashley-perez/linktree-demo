@@ -1,14 +1,20 @@
-# Linktree Demo!
+# Linktree Demo! 
 
 Using React + TypeScript + Vite's builtin template.
 
-## FEATURE!
 
-TBD
-
-## Github Pages Link
+## Live Deployment - Github Pages
 
 Link: https://ashley-perez.github.io/linktree-demo/
+
+## FEATURE!
+
+Profile Switcher! Allows users to have multiple profiles each with their own links, bio, and profile picture!
+Tap the profile button to see a drop down of premade profiles :)
+
+## Pitch!
+
+Link: https://docs.google.com/document/d/1RGtS10MS9MijaeBbg46mMXA9uq4-Pn6iK6T-rA7g0Yk/edit?usp=sharing
 
 ### Style Inspo!
 

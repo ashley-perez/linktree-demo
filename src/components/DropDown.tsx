@@ -1,6 +1,5 @@
 import { useState } from "react";
-import type { Mode } from "./CardData";
-import { Modes } from "./CardData";
+import { Modes, type Mode } from "./CardData";
 
 type DropDownProps = {
   setMode: (mode: Mode) => void;

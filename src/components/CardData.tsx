@@ -1,16 +1,20 @@
 import type { IconType } from "react-icons";
-import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
-import { BsFileEarmarkTextFill } from "react-icons/bs";
-import { BsFillSuitcaseLgFill } from "react-icons/bs";
-import { BsDiscord } from "react-icons/bs";
-import { BsDpadFill } from "react-icons/bs";
-import { BsSpotify } from "react-icons/bs";
-import { BsTicketDetailedFill } from "react-icons/bs";
-import { BsCameraFill } from "react-icons/bs";
+
+import {
+  BsLinkedin,
+  BsGithub,
+  BsFileEarmarkTextFill,
+  BsFillSuitcaseLgFill,
+  BsDiscord,
+  BsDpadFill,
+  BsSpotify,
+  BsTicketDetailedFill,
+  BsCameraFill,
+  BsAsterisk,
+  BsTwitterX,
+} from "react-icons/bs";
+
 import { FaItchIo } from "react-icons/fa";
-import { BsAsterisk } from "react-icons/bs";
-import { BsTwitterX } from "react-icons/bs";
 
 export type CardData = {
   title: string;
