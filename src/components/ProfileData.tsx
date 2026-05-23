@@ -1,8 +1,8 @@
 import type { Mode } from "./CardData";
 
 import edelgard from "/edelgard.png"; // have to import since base changed
-import me from "/me.png";
 import triforce from "/triforce.webp";
+import star from "/mario_star.webp";
 
 export type ProfileData = {
   name: string;
@@ -28,6 +28,6 @@ export const allProfiles: Record<Mode, ProfileData> = {
     name: "Ashley Perez",
     bio: "Gameplay and Level Designer",
     little_bio: "TIMESKIP out soon...",
-    pfp: me,
+    pfp: star,
   },
 };
