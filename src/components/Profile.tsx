@@ -11,11 +11,11 @@ function Profile({ profileinfo }: { profileinfo: ProfileData }) {
         />
       </div>
 
-      <div className="pt-2 md:font-bold text-lg md:text-2xl ">
+      <div className="pt-2 text-lg md:text-2xl ">
         <h2> {profileinfo.name} </h2>
       </div>
 
-      <p className="text-center  w-40 md:w-full text-sm md:text-lg">
+      <p className="text-center w-40 md:w-full text-sm md:text-lg">
         {profileinfo.bio}
       </p>
       <p className="text-center text-[10px] md:text-xs ">
