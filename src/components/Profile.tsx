@@ -3,11 +3,13 @@ import type { ProfileData } from "./ProfileData";
 function Profile({ profileinfo }: { profileinfo: ProfileData }) {
   return (
     <header className="flex flex-col items-center font-bc-prop text-win95-off-white">
-      <img
-        className="w-25 h-25 md:w-30 md:h-30  object-contain border-2 bg-win95-gray border-win95-off-white"
-        src={profileinfo.pfp}
-        alt="AP"
-      />
+      <div className="shadow-win95-bevel p-1">
+        <img
+          className="w-25 h-25 md:w-30 md:h-30 xl:w-35 xl:h-35 object-contain bg-win95-gray"
+          src={profileinfo.pfp}
+          alt="AP"
+        />
+      </div>
 
       <div className="pt-2 md:font-bold text-lg md:text-2xl ">
         <h2> {profileinfo.name} </h2>

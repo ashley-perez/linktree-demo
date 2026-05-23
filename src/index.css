@@ -16,6 +16,10 @@
   --shadow-win95:
     2px 2px 0px 0px rgba(0, 0, 0, 1), inset -2px -2px 0 #797979,
     inset 2px 2px 0 #fbfbfb;
+
+  --shadow-win95-bevel:
+    inset -2px -2px 0 #ffffff, inset 2px 2px 0 #848484,
+    inset -4px -4px 0 #e3e3e3, inset 4px 4px 0 #1f1f1f;
 }
 
 body {

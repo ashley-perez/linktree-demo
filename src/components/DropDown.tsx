@@ -17,7 +17,7 @@ export default function DropDown({ setMode }: DropDownProps) {
           setOpen(!isOpen);
         }}
         className={
-          "cursor-pointer md:text-sm p-2 bg-win95-gray  hover:bg-win95-dark-gray shadow-win95"
+          "cursor-pointer md:text-sm p-2 min-h-8.75 bg-win95-gray  hover:bg-win95-dark-gray active:bg-win95-dark-gray shadow-win95"
         }
       >
         Profile
@@ -38,7 +38,7 @@ export default function DropDown({ setMode }: DropDownProps) {
                 currURL.set("mode", selectedMode); // get mode= currMode ready to add to URL
                 window.history.pushState({}, "", `?${currURL.toString()}`); // write and update to URL
               }}
-              className="cursor-pointer p-2 w-full text-xs bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
+              className="cursor-pointer p-2  min-h-8.75  w-full text-xs bg-win95-gray hover:bg-win95-dark-blue active:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
             >
               {selectedMode}
             </button>
