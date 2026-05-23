@@ -12,7 +12,7 @@ function LinkCards({ cardinfo }: { cardinfo: CardData }) {
       rel="noopener noreferrer" // security measure so there is no access to window.opener
       // RELATIVE!!!! on the parent so that absolute has a reference
       // and doesn't "break out" of bounds
-      className="relative flex flex-col w-xs md:w-md font-bc-prop bg-win95-gray items-center  shadow-win95 hover:bg-hover-gray cursor-pointer"
+      className="relative flex flex-col w-xs md:w-md font-bc-prop bg-win95-gray items-center  shadow-win95 hover:bg-hover-gray active:bg-hover-gray cursor-pointer"
     >
       {/* only if icon exists do we format it */}
       {Icon && (
