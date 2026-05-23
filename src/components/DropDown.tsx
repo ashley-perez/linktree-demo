@@ -15,7 +15,6 @@ export default function DropDown({ setMode }: DropDownProps) {
         // set the state when button is clicked
         onClick={() => {
           setOpen(!isOpen);
-          console.log("isopen var: ", isOpen);
         }}
         className={
           "cursor-pointer md:text-sm p-2 bg-win95-gray  hover:bg-win95-dark-gray shadow-win95"
@@ -39,7 +38,7 @@ export default function DropDown({ setMode }: DropDownProps) {
                 currURL.set("mode", selectedMode); // get mode= currMode ready to add to URL
                 window.history.pushState({}, "", `?${currURL.toString()}`); // write and update to URL
               }}
-              className="cursor-pointer p-2 w-full text-[10px] md:text-xs bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
+              className="cursor-pointer p-2 w-full text-xs bg-win95-gray hover:bg-win95-dark-blue hover:text-win95-off-white shadow-win95"
             >
               {selectedMode}
             </button>
